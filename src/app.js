@@ -1,5 +1,5 @@
 /**
- * @author PancaDev
+ * @author PancaDevG
  */
 
 const { app, ipcMain } = require('electron');
