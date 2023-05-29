@@ -105,6 +105,6 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-image: linear-gradient(to bottom, #501376 90%, #9a35ff);
+    background-color: rgb(140, 49, 213);
     border-radius: 10px;
-  }
+}
