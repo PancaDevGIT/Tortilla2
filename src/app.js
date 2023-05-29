@@ -1,7 +1,42 @@
 /**
  * @author PancaDev
  */
+const clientId = '1112566121984438352';
+ const DiscordRPC = require('discord-rpc');
+ const RPC = new DiscordRPC.Client({ transport: 'ipc'});
+ 
+ DiscordRPC.register(clientId);
 
+ async function setActivity() {
+    if (!RPC) return;
+    RPC.setActivity({
+        details: `TortillaLand 2 | Publico`,
+        state: `Jugando...`,
+        startTimestamp: Date.now(),
+        largeImageKey: 'logo',
+        largeImageText: 'Gatitas Legacy',
+        instance: false,
+        buttons: [
+            {
+                label: '⭐ Discord Server',
+                url: 'https://discord.gg/uSutTYv6zB',
+            },
+
+            {
+                label: '🌐 Web',
+                url: 'https://dreamdark.net',
+            }
+        ]
+    });
+}
+
+RPC.on('ready', async () => {
+    setActivity();
+
+    setInterval(() => {
+        setActivity();
+    }, 86400 * 1000);
+});
 const { app, ipcMain } = require('electron');
 const { Microsoft } = require('minecraft-java-core');
 const { autoUpdater } = require('electron-updater')
