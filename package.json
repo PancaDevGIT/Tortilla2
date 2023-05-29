@@ -1,0 +1,37 @@
+{
+    "name": "DreamDark_Tortilla2",
+    "preductname": "DreamDark Launcher TortillaLand2",
+    "version": "1.0.0",
+    "description": "Launcher DreamDark TortillaLand2",
+    "main": "src/app.js",
+    "author": "PancaDev",
+    "url": "http://files.dreamdark.net/tortilla2",
+    "engines": {
+        "node": "^18.x.x"
+    },
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "build": "node build.js --obf=true",
+        "dev": "nodemon --exec npm start"
+    },
+    "license": "CC0",
+    "nodemonConfig": {
+        "ext": "js,html,css"
+    },
+    "dependencies": {
+        "electron-updater": "^5.0.1",
+        "minecraft-java-core": "^3.4.4",
+        "node-fetch": "^2.6.7"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^20.0.0",
+        "electron-builder": "^23.0.3",
+        "javascript-obfuscator": "^4.0.2",
+        "nodemon": "^2.0.16"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PancaDevGIT/DreamLauncher.git"
+    }
+}
