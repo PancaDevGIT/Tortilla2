@@ -1,7 +1,7 @@
 {
     "name": "DreamDark_Tortilla2",
     "preductname": "DreamDark Launcher TortillaLand2",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "Launcher DreamDark TortillaLand2",
     "main": "src/app.js",
     "author": "PancaDev",
@@ -32,6 +32,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/PancaDevGIT/DreamLauncher.git"
+        "url": "git+https://github.com/PancaDevGIT/Tortilla2.git"
     }
 }
