@@ -14,7 +14,7 @@ const clientId = '1112566121984438352';
         state: `Jugando...`,
         startTimestamp: Date.now(),
         largeImageKey: 'logo',
-        largeImageText: 'Gatitas Legacy',
+        largeImageText: 'TortillaLand 2 - Publico',
         instance: false,
         buttons: [
             {
@@ -37,6 +37,8 @@ RPC.on('ready', async () => {
         setActivity();
     }, 86400 * 1000);
 });
+
+
 const { app, ipcMain } = require('electron');
 const { Microsoft } = require('minecraft-java-core');
 const { autoUpdater } = require('electron-updater')
