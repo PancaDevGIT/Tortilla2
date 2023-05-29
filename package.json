@@ -1,7 +1,7 @@
 {
     "name": "DreamDark_Tortilla2",
     "preductname": "DreamDark TortillaLand2",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Launcher DreamDark TortillaLand2",
     "main": "src/app.js",
     "author": "PancaDev",
@@ -19,6 +19,7 @@
         "ext": "js,html,css"
     },
     "dependencies": {
+        "discord-rpc": "^4.0.1",
         "electron-updater": "^5.0.1",
         "minecraft-java-core": "^3.4.4",
         "node-fetch": "^2.6.7"
